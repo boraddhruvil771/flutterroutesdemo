@@ -17,6 +17,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       // Initial route
       initialRoute: '/',
+
       // Named routesz
       routes: {
         '/': (context) => const HomeScreen(),

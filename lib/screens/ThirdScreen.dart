@@ -11,6 +11,7 @@ class ThirdScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: const Text('Third Screen')),
       body: Center(
+
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
