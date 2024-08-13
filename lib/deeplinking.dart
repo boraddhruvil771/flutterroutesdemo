@@ -3,17 +3,30 @@ import 'package:go_router/go_router.dart';
 
 void main() => runApp(MaterialApp.router(routerConfig: router));
 
+
+/********
+     redirection url = Https://dhruvilborad.github.io/  or  Http://dhruvilborad.github.io/
+ *********/
 final router = GoRouter(
   routes: [
     GoRoute(
       path: '/',
-      builder: (_, __) => Scaffold(
+      builder: (context, state) => Scaffold(
         appBar: AppBar(title: const Text('Home Screen')),
+        body: Center(
+          child: ElevatedButton(
+            onPressed: () {
+              // Navigate to the details screen
+              context.go('/details');
+            },
+            child: const Text('Go to Details'),
+          ),
+        ),
       ),
       routes: [
         GoRoute(
           path: 'details',
-          builder: (_, __) => Scaffold(
+          builder: (context, state) => Scaffold(
             appBar: AppBar(title: const Text('Details Screen')),
           ),
         ),
