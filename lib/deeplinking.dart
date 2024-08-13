@@ -7,7 +7,7 @@ void main() => runApp(MaterialApp.router(
     ));
 
 /********
-    redirection url to check deeplink = Https://dhruvilborad.github.io/  or  Http://dhruvilborad.github.io/
+     redirection url to check deeplink = Https://dhruvilborad.github.io/  or  Http://dhruvilborad.github.io/
  *********/
 final router = GoRouter(
   routes: [
