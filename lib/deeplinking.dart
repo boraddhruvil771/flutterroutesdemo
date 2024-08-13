@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
-void main() => runApp(MaterialApp.router(routerConfig: router));
-
+void main() => runApp(MaterialApp.router(
+      routerConfig: router,
+      debugShowCheckedModeBanner: false,
+    ));
 
 /********
-     redirection url = Https://dhruvilborad.github.io/  or  Http://dhruvilborad.github.io/
+    redirection url to check deeplink = Https://dhruvilborad.github.io/  or  Http://dhruvilborad.github.io/
  *********/
 final router = GoRouter(
   routes: [
